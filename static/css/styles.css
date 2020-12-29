@@ -227,11 +227,22 @@ a.navline:hover::before {
   visibility: hidden;
 } */
 
-.image1 h5 {
+/* .image1 h5 {
   position: absolute;
   padding: 1700px 0 0px 10px;
   width: 150px;
   top: 0;
+  visibility: hidden;
+} */
+
+.image1 h5 {
+  position: relative;
+  top: -96px;
+  left: 6px;
+  /* padding: 0px 0px 0px 0px; */
+  /* padding: 1700px 0 0px 10px; */
+  /* width: 150px; */
+
   /* right: 0px; */
   /* background-color: red; */
   /* z-index: 10; */
