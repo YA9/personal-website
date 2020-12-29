@@ -216,7 +216,7 @@ a.navline:hover::before {
   /* z-index: 20; */
 }
 
-.image1 h5 {
+/* .image1 h5 {
   position: fixed;
   padding: 60px 0 0 0;
   width: 25%;
@@ -225,6 +225,24 @@ a.navline:hover::before {
   background-color: white;
   z-index: 10;
   visibility: hidden;
+} */
+
+.image1 h5 {
+  position: absolute;
+  padding: 1700px 0 0px 10px;
+  width: 150px;
+  top: 0;
+  /* right: 0px; */
+  /* background-color: red; */
+  /* z-index: 10; */
+  visibility: hidden;
+}
+
+.image_1 img:hover + .image1 h5 {
+  visibility: visible;
+  /* width: 25%; */
+  transition: 0.15s ease-in-out;
+  /* z-index: 19; */
 }
 
 .image1 img:hover {
@@ -238,12 +256,12 @@ a.navline:hover::before {
   z-index: 20;
 }
 
-.image_1 img:hover + .image1 h5 {
+/* .image_1 img:hover + .image1 h5 {
   visibility: visible;
   width: 25%;
   transition: 0.15s ease-in-out;
   z-index: 19;
-}
+} */
 
 /* #txt1 {
   position: relative;
