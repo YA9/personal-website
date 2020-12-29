@@ -3,6 +3,8 @@
   padding: 0;
   /* background-color: white; */
   box-sizing: border-box;
+  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; */
 }
 
 /* main page navbar organization */
@@ -10,10 +12,11 @@
   padding: 0px 35px 0px 0px; /* shift nav buttons to the left */
   /* border: 2px solid black; */
   /* background-color: rgb(230, 230, 230); */
-  position: absolute;
+  position: sticky;
   right: 0;
   width: 100%;
 }
+
 .navbar a {
   float: right;
   display: block;
@@ -23,8 +26,8 @@
   margin: 0px 18px;
   text-decoration: none;
   /* font-size: 1.2rem; */
-  font-weight: 10%;
-  border-radius: 15px;
+  /* font-weight: 10%; */
+  /* border-radius: 15px; */
   /* background-color: rgb(230, 230, 230); */
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -61,43 +64,254 @@ a.navline:hover::before {
   /* visibility: hidden; */
 }
 
-/* main page walpaper */
-.top_box {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(../images/processed/4k.jpg);
-  /* background-position: top; */
-  background-repeat: no-repeat;
-  background-size: contain;
-  /* background-attachment: fixed; */
-  background-position-y: 65px;
-  background-size: 100% auto;
-  /* height: 500px; */
+.navbar {
+  background-color: white;
+  position: fixed;
+  z-index: 100;
 }
 
 /* main header */
 .main_box {
   /* border: 2px solid black; */
   position: relative;
-  padding-top: 100px;
+  padding-top: 50px;
+  padding-right: 50%;
+  padding-left: 50px;
   float: center;
-  width: 500px;
+  width: 100%;
   margin: 0 auto;
-  z-index: -1;
+  z-index: 5;
   text-align: justify;
   color: white;
+  /* border: 2px solid red; */
 }
 .main_box h1 {
   position: relative;
   text-align: center;
-  padding-top: 100px;
-  z-index: -1;
+  padding-top: 125px;
 }
-.rest_of_page {
+/* main page walpaper */
+.top_box {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../images/processed/pexels-sergio-souza-2299567.jpg);
+  /* background-position: top; */
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* background-attachment: fixed; */
+  background-position-y: 60px;
+  background-size: 100% auto;
+  height: 550px;
+}
+
+.about_page {
   width: 100%;
+  height: 500px;
+  /* background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(../images/processed/4k.jpg); */
   background: white;
   background-size: 100%;
-  z-index: 100;
+  /* z-index: 100; */
   float: center;
-  margin-top: 100px;
+  margin-top: 300px;
   background-color: white;
 }
+
+#about {
+  /* position: relative; */
+  text-align: center;
+  padding-top: 50px;
+  color: black;
+  /* float: center; */
+  margin: 0 auto;
+  width: 500px;
+  /* padding-right: 50%;
+  padding-left: 50px; */
+}
+#about_p {
+  text-align: justify;
+}
+
+.experience_page {
+  width: 100%;
+  height: 500px;
+  /* background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(../images/processed/4k.jpg); */
+  background: white;
+  background-size: 100%;
+  /* z-index: 100; */
+  /* float: center; */
+  /* margin-top: 300px; */
+  background-color: white;
+}
+
+#experience {
+  /* position: relative; */
+  text-align: center;
+  padding-top: 0px;
+  color: black;
+  /* float: center; */
+  margin: 0 auto;
+  width: 500px;
+  /* padding-right: 50%;
+  padding-left: 50px; */
+}
+#experience_p {
+  text-align: justify;
+}
+
+/* This creates the photo slide grid */
+
+.experience_photos_row {
+  display: flex;
+  /* flex-wrap: wrap; */
+  padding: 0 4px;
+  /* padding-left: 400px;
+  padding-right: 50px; */
+  width: 80%;
+  margin: 0px auto;
+}
+
+.experience_photos_col {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.experience_photos_col img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* the following animates the individual boxes when not hovered */
+.popup {
+  transition: 0.15s ease-out;
+}
+
+/* the following animates the individual boxes once hovered on */
+.popup:hover {
+  position: relative;
+  top: -5px;
+  /* width: 150%; */
+  z-index: 10;
+  transition: 0.2s ease-in;
+  opacity: 50%;
+}
+
+/* PUT THE BELOW IN ITS OWN CSS DOCUMENT */
+/* the below refers to mapping each image to its popup */
+
+.image1 img {
+  position: fixed;
+  padding: 53px 0 0 0px;
+  /* padding-left: 200px; */
+  width: 0%;
+  border-radius: 8px;
+  /* margin: auto; */
+  top: 0;
+  right: 0;
+  transition: 0.2s ease-in-out;
+  visibility: hidden;
+  /* z-index: 20; */
+}
+
+.image1 h5 {
+  position: fixed;
+  padding: 60px 0 0 0;
+  width: 25%;
+  top: 0;
+  right: 50%;
+  background-color: white;
+  z-index: 10;
+  visibility: hidden;
+}
+
+.image1 img:hover {
+  width: 50%;
+}
+
+.image_1 img:hover + .image1 img {
+  visibility: visible;
+  width: 50%;
+  transition: 0.15s ease-in-out;
+  z-index: 20;
+}
+
+.image_1 img:hover + .image1 h5 {
+  visibility: visible;
+  width: 25%;
+  transition: 0.15s ease-in-out;
+  z-index: 19;
+}
+
+/* #txt1 {
+  position: relative;
+  top: -100px;
+  font-weight: bold;
+  visibility: hidden;
+} */
+
+/* .image_1 img:hover + #txt1 {
+  visibility: visible;
+} */
+
+.image2 img {
+  position: fixed;
+  padding: 53px 0 0 0px;
+  /* padding-left: 200px; */
+  width: 0%;
+  border-radius: 8px;
+  /* margin: auto; */
+  top: 0;
+  right: 0;
+  transition: 0.2s ease-in-out;
+  visibility: hidden;
+  /* z-index: 20; */
+}
+
+.image2 img:hover {
+  visibility: visible;
+  /* width: 50%; */
+}
+
+.image_2 img:hover + .image2 img {
+  visibility: visible;
+  width: 50%;
+  transition: 0.15s ease-in-out;
+  z-index: 20;
+}
+
+/* .image1 {
+  margin-top: 100px;
+  padding-top: 100px;
+  max-width: 100px;
+  max-height: 100px;
+} */
+
+/* #image1 {
+  position: fixed;
+} */
+
+/* .popup:hover::after {
+  content: "hello";
+} */
+
+/* img.popup::before {
+  border: 2px solid red;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  width: 300%;
+  background-color: orangered;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.2s ease-in-out;
+}
+img.popup:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+} */
