@@ -48,6 +48,17 @@
   padding: 0;
   margin: 0;
 }
+
+#ya {
+  position: absolute;
+  top: 7px;
+  left: 40px;
+  max-width: 50px;
+  transition: 0.2s ease-in-out;
+}
+#ya:hover {
+  top: 5px;
+}
 #linkedin {
   position: absolute;
   top: 4px;
@@ -123,6 +134,7 @@ a.navline:hover::before {
   background-color: white;
   position: fixed;
   z-index: 100;
+  height: 60px;
 }
 
 /* main header */
@@ -153,32 +165,39 @@ a.navline:hover::before {
 } */
 
 .main_box {
-  /* position: relative;
-    margin: 0 center; */
-  /* float: center; */
+  /* border: 2px solid red; */
+  margin: 0 99999px 0 0;
 }
 .main_box div1 img {
-  margin: 72px 500px 0px 50px;
-  /* position: relative; */
+  margin: 70px 0px 0px 70px;
   margin-top: 72px;
   border: 2px solid white;
   border-radius: 8px;
-  width: 40%;
+  height: 400px;
+  /* width: 42%; */
 }
 
 .main_box div2 img {
-  margin: 10px 0px 0px 50px;
-  /* margin-top: 10px; */
-  /* margin-left: 10%; */
+  margin: 10px 0px 0px 70px;
   border: 2px solid white;
   border-radius: 8px;
-  width: 40%;
+  height: 93.5px;
+  /* width: 42%; */
 }
 
-@media only screen and (max-width: 900px) {
+.main_box div3 img {
+  /* position: absolute; */
+  width: 250px;
+  height: 250px;
+  /* top: calc(((593px + 60px - 250px) / 2)); */
+  /* left: 1000px; */
+  margin: -1500px 0px 000px 1000px;
+}
+
+@media only screen and (max-width: 920px) {
   .main_box div1 img {
     margin: 0;
-    margin-top: 70px;
+    margin-top: 72px;
     width: 100%;
   }
   .main_box div2 img {
@@ -189,7 +208,7 @@ a.navline:hover::before {
   .main_box {
     display: block;
     margin: 0 auto;
-    width: 80%;
+    width: 85%;
   }
 }
 
@@ -207,7 +226,7 @@ a.navline:hover::before {
   /* background-attachment: fixed; */
   background-position-y: 60px;
   background-size: 100% auto;
-  height: 550px;
+  height: 593px;
 }
 
 .about_page {
