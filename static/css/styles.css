@@ -187,13 +187,14 @@ a.navline:hover::before {
 
 .main_box div3 img {
   position: absolute;
-  width: 250px;
-  height: 250px;
-  top: calc(((593px + 60px - 250px) / 2));
+  width: 400px;
+  height: 400px;
+  top: calc(((593px + 60px - 400px) / 2));
   /* right: calc(100% / 3 - 360px); */
-  right: calc(40% - 425px);
+  right: calc(40% - 493px);
   border: 4px solid black;
   border-radius: 50%;
+  transition: 0.25s ease-in-out;
 }
 
 @media only screen and (max-width: 920px) {
@@ -214,10 +215,10 @@ a.navline:hover::before {
   }
 }
 
-@media only screen and (max-width: 1195px) {
+@media only screen and (max-width: 1264px) {
   .main_box div3 img {
-    top: 0px;
-    left: 0px;
+    /* top: 0px;
+    left: 0px; */
     width: 0px;
     visibility: hidden;
   }
