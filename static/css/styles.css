@@ -194,7 +194,7 @@ a.navline:hover::before {
   right: calc(40% - 493px);
   border: 4px solid black;
   border-radius: 50%;
-  transition: 0.25s ease-in-out;
+  transition: 0.2s ease-in;
 }
 
 @media only screen and (max-width: 920px) {
@@ -214,12 +214,10 @@ a.navline:hover::before {
     width: 85%;
   }
 }
-
 @media only screen and (max-width: 1264px) {
   .main_box div3 img {
-    /* top: 0px;
-    left: 0px; */
-    width: 0px;
+    transform: scale(0);
+    transition: 0.3s ease-out;
     visibility: hidden;
   }
 }
