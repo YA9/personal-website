@@ -1,10 +1,24 @@
+@font-face {
+  font-family: "custom";
+  /* src: url(../fonts/PatrickHand-Regular.ttf); */
+  /* src: url(../fonts/Itim-Regular.ttf); */
+  src: url(../fonts/roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: "custom bold";
+  src: url(../fonts/roboto/Roboto-Medium.ttf);
+  src: url(../fonts/roboto/Roboto-Bold.ttf);
+  src: url(../fonts/roboto/Roboto-Black.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
   /* background-color: white; */
   box-sizing: border-box;
-  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 /* main page navbar organization */
@@ -15,6 +29,47 @@
   position: sticky;
   right: 0;
   width: 100%;
+}
+
+.navbar h1 {
+  position: absolute;
+  top: 4px;
+  left: 90px;
+  /* border: 2px solid rgb(29, 31, 39); */
+  padding: 6px;
+  /* border-radius: 25px; */
+}
+
+.navbar div a {
+  padding: 0;
+  margin: 0;
+}
+.navbar div img {
+  padding: 0;
+  margin: 0;
+}
+#linkedin {
+  position: absolute;
+  top: 4px;
+  /* right: 15px; */
+  left: 10px;
+  transition: 0.2s ease-in-out;
+  /* border: 2px solid red; */
+}
+#github {
+  position: absolute;
+  top: 32px;
+  /* right: 15px; */
+  left: 10px;
+
+  transition: 0.2s ease-in-out;
+  /* border: 2px solid blue; */
+}
+#linkedin:hover {
+  top: 2px;
+}
+#github:hover {
+  top: 30px;
 }
 
 .navbar a {
@@ -60,7 +115,7 @@ a.navline:hover::before {
 /* YA logo */
 .navbar img {
   max-width: 50px; /* scale logo */
-  margin: 9px 0px 0px 35px; /* shift logo down and right */
+  margin: 7px 0px 0px 40px; /* shift logo down and right */
   /* visibility: hidden; */
 }
 
@@ -71,11 +126,10 @@ a.navline:hover::before {
 }
 
 /* main header */
-.main_box {
-  /* border: 2px solid black; */
+/* .main_box {
   position: relative;
   padding-top: 50px;
-  padding-right: 50%;
+  padding-right: 60%;
   padding-left: 50px;
   float: center;
   width: 100%;
@@ -83,24 +137,54 @@ a.navline:hover::before {
   z-index: 5;
   text-align: justify;
   color: white;
-  /* border: 2px solid red; */
+  font-family: "custom";
+  border: 2px solid rgb(29, 31, 39);
 }
+
 .main_box h1 {
   position: relative;
-  text-align: center;
+  text-align: left;
   padding-top: 125px;
+  font-size: 3em;
 }
+
+.main_box p1 {
+  font-size: 2em;
+} */
+
+.main_box div1 img {
+  /* position: absolute; */
+  margin: 72px 500px 0px 50px;
+  border: 2px solid white;
+  border-radius: 8px;
+  width: 40%;
+}
+
+.main_box div2 img {
+  /* position: absolute; */
+  margin: 10px 0px 0px 50px;
+  border: 2px solid white;
+  border-radius: 8px;
+  width: 40%;
+}
+
+/* @media */
+
 /* main page walpaper */
 .top_box {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(../images/processed/pexels-sergio-souza-2299567.jpg);
+  background: linear-gradient(
+      /* 225deg, */ rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url(../images/processed/code\ ab2.jpg);
+  /* background: url(../images/processed/code\ final.jpg); */
   /* background-position: top; */
   background-repeat: no-repeat;
   background-size: contain;
   /* background-attachment: fixed; */
   background-position-y: 60px;
   background-size: 100% auto;
-  height: 550px;
+  height: 530px;
 }
 
 .about_page {
@@ -207,7 +291,7 @@ a.navline:hover::before {
   padding: 53px 0 0 0px;
   /* padding-left: 200px; */
   width: 0%;
-  border-radius: 8px;
+  border-radius: 10px;
   /* margin: auto; */
   top: 0;
   right: 0;
@@ -246,7 +330,7 @@ a.navline:hover::before {
   padding: 53px 0 0 0px;
   /* padding-left: 200px; */
   width: 0%;
-  border-radius: 8px;
+  border-radius: 10px;
   /* margin: auto; */
   top: 0;
   right: 0;
