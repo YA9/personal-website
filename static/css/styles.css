@@ -21,6 +21,11 @@
   font-family: "Lato", sans-serif;
 }
 
+/* bold classes of bold */
+.bold {
+  font-weight: 600;
+}
+
 /* main page navbar organization */
 .navbar {
   padding: 0px 35px 0px 0px; /* shift nav buttons to the left */
@@ -99,6 +104,7 @@
   /* background-color: rgb(230, 230, 230); */
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  transition: 0.2s ease-in-out;
 }
 .navbar a:hover {
   color: orangered;
@@ -146,7 +152,7 @@ a.navline:hover::before {
 .main_box div1 img {
   margin: 70px 0px 0px 70px;
   margin-top: 72px;
-  border: 2px solid white;
+  /* border: 2px solid white; */
   border-radius: 8px;
   height: 400px;
   /* width: 42%; */
@@ -154,8 +160,9 @@ a.navline:hover::before {
 
 .main_box div2 img {
   margin: 10px 0px 0px 70px;
-  border: 2px solid white;
+  /* border: 2px solid white; */
   border-radius: 8px;
+  width: 770px;
   height: 93.5px;
   /* width: 42%; */
 }
@@ -167,7 +174,7 @@ a.navline:hover::before {
   top: calc(((593px + 60px - 400px) / 2));
   /* right: calc(100% / 3 - 360px); */
   right: calc(40% - 493px);
-  border: 4px solid black;
+  /* border: 4px solid black; */
   border-radius: 50%;
   transition: 0.2s ease-in;
 }
@@ -200,10 +207,10 @@ a.navline:hover::before {
 /* main page walpaper */
 .top_box {
   background: linear-gradient(
-      /* 225deg, */ rgba(0, 0, 0, 0.2),
-      rgba(0, 0, 0, 1)
-    ),
-    url(../images/processed/code\ ab\ final1.jpg);
+    /* 225deg, */ rgba(216, 142, 112, 0.2),
+    rgba(216, 142, 112, 0.8)
+  );
+  /* url(../images/processed/code\ ab\ final1.jpg); */
   /* background: url(../images/processed/code\ final.jpg); */
   /* background-position: top; */
   background-repeat: no-repeat;
@@ -215,13 +222,19 @@ a.navline:hover::before {
 }
 .about_page h1 {
   font-size: 3em;
-  padding-bottom: 25px;
+  /* padding-bottom: 25px; */
+  margin-bottom: 25px;
+  border: 0px solid;
+  background: rgb(216, 112, 112);
+  border-radius: 100px;
+  color: white;
   /* font-family: "custom bold"; */
 }
 .about_page {
   /* height: 500px; */
   text-align: center;
-  padding-top: 50px;
+  padding-top: 60px;
+  padding-bottom: 40px;
   color: black;
   margin: 0 auto;
   width: 60%;
@@ -244,7 +257,7 @@ a.about_anchor {
 
 #experience {
   width: 100%;
-  height: 500px;
+  /* height: 500px; */
   /* background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url(../images/processed/4k.jpg); */
   background: white;
@@ -252,14 +265,15 @@ a.about_anchor {
   /* z-index: 100; */
   /* float: center; */
   /* margin-top: 300px; */
+  /* padding-bottom: 2100px; this number shifts down the "Contact" tag */
+  /* border: 2px solid red; */
   background-color: white;
 }
 
 .experience_page {
   /* height: 500px; */
   text-align: center;
-  padding-top: 500px;
-  color: black;
+  padding-top: 60px;
   margin: 0 auto;
   width: 60%;
   /* border: 2px solid red; */
@@ -267,6 +281,10 @@ a.about_anchor {
 
 .experience_page h1 {
   font-size: 3em;
+  border: 0px solid;
+  background: rgb(216, 112, 112);
+  border-radius: 100px;
+  color: white;
   /* padding-bottom: 25px; */
   /* font-family: "custom bold"; */
 }
@@ -277,113 +295,7 @@ a.about_anchor {
   /* font-family: "custom"; */
 }
 
-/* This creates the photo slide grid */
-
-.experience_photos_row {
-  display: flex;
-  /* flex-wrap: wrap; */
-  padding: 0 4px;
-  /* padding-left: 400px;
-  padding-right: 50px; */
-  width: 80%;
-  margin: 0px auto;
-}
-
-.experience_photos_col {
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
-}
-
-.experience_photos_col img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
-  border-radius: 10px;
-}
-
-/* the following animates the individual boxes when not hovered */
-.popup {
-  transition: 0.15s ease-out;
-}
-
-/* the following animates the individual boxes once hovered on */
-.popup:hover {
-  position: relative;
-  top: -5px;
-  /* width: 150%; */
-  z-index: 10;
-  transition: 0.2s ease-in;
-  opacity: 50%;
-}
-
-/* PUT THE BELOW IN ITS OWN CSS DOCUMENT */
-/* the below refers to mapping each image to its popup */
-
-.image1 img {
-  position: fixed;
-  padding: 53px 0 0 0px;
-  /* padding-left: 200px; */
-  width: 0%;
-  border-radius: 10px;
-  /* margin: auto; */
-  top: 0;
-  right: 0;
-  transition: 0.2s ease-in-out;
-  visibility: hidden;
-  /* z-index: 20; */
-}
-
-.image1 h5 {
-  position: relative;
-  top: -96px;
-  left: 6px;
-  visibility: hidden;
-}
-
-.image_1 img:hover + .image1 h5 {
-  visibility: visible;
-  /* width: 25%; */
-  transition: 0.15s ease-in-out;
-  /* z-index: 19; */
-}
-
-.image1 img:hover {
-  width: 50%;
-}
-
-.image_1 img:hover + .image1 img {
-  visibility: visible;
-  width: 50%;
-  transition: 0.15s ease-in-out;
-  z-index: 20;
-}
-
-.image2 img {
-  position: fixed;
-  padding: 53px 0 0 0px;
-  /* padding-left: 200px; */
-  width: 0%;
-  border-radius: 10px;
-  /* margin: auto; */
-  top: 0;
-  right: 0;
-  transition: 0.2s ease-in-out;
-  visibility: hidden;
-  /* z-index: 20; */
-}
-
-/* .image2 img:hover {
-  visibility: visible;
-  width: 50%;
-} */
-
-.image_2 img:hover + .image2 img {
-  visibility: visible;
-  width: 50%;
-  transition: 0.15s ease-in-out;
-  z-index: 20;
-}
+/* GALLERY PLACE IS HERE */
 
 /* TIMELINE START */
 .timeline {
@@ -391,11 +303,12 @@ a.about_anchor {
   float: right;
   /* margin: 50px 100px 50px 100px; */
   margin: 50px 0;
-  padding: 0 100px;
+  margin-right: 20px;
+  /* padding: 0 100px; */
   /* margin: 50px auto; */
   width: 100%;
-  max-width: 1300px;
-
+  /* max-width: 1300px; */
+  max-width: 70%;
   /* padding: 40px 0; */
   /* border: 2px solid red; */
 }
@@ -407,6 +320,7 @@ a.about_anchor {
   width: 2px;
   height: 100%;
   background: slategray;
+  /* border: 2px solid blue; */
 }
 
 .timeline ul li {
@@ -484,7 +398,7 @@ a.about_anchor {
 .timeline ul li:nth-child(even) .t_time {
   position: absolute;
   top: 12px;
-  left: -165px;
+  left: -155px;
   padding: 8px 16px;
   background: rgb(216, 112, 112);
   color: white;
@@ -492,3 +406,155 @@ a.about_anchor {
   /* box-shadow: 0 0 0 3px rgba(216, 112, 147, 0.2); */
 }
 /* TIMELINE END */
+
+/* CONTACT START */
+.contact_page h1 {
+  overflow: auto;
+  font-size: 3em;
+  /* margin-bottom: 25px; */
+  border: 0px solid;
+  /* padding-top: 60px; */
+  background: rgb(216, 112, 112);
+  border-radius: 100px;
+  color: white;
+  /* border: 2px solid red; */
+}
+.contact_page {
+  overflow: auto;
+  position: relative;
+  /* position: absolute; */
+  top: 0px;
+  text-align: center;
+  /* bottom: 0; */
+  /* padding-top: 60px; */
+  padding-bottom: 40px;
+  /* color: black; */
+  margin: 0 auto;
+  width: 60%;
+  /* border: 2px solid red; */
+}
+#contact {
+  padding-top: 60px;
+}
+
+.c_wrapper {
+  padding: 0 100px;
+}
+
+.c_form {
+  margin: 0 auto;
+  max-width: 850px;
+  /* background: rgba(112, 166, 216, 0.801); */
+  background: rgba(216, 142, 112, 0.774);
+  /* border: 2px solid red; */
+  padding: 30px;
+  border-radius: 12px;
+  display: flex;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.c_input_fields {
+  display: flex;
+  flex-direction: column;
+  margin-right: 25px;
+}
+
+.c_input_fields,
+.c_msg {
+  width: 500px;
+}
+
+.c_input_fields .c_input,
+.c_msg textarea {
+  margin: 10px 0;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  border-bottom: 2px solid white;
+  padding: 10px;
+  color: white;
+  font-size: 1.1em;
+  width: 100%;
+}
+
+.c_msg textarea {
+  height: 232px;
+}
+
+::-webkit-input-placeholder {
+  color: white;
+}
+
+::-moz-input-placeholder {
+  color: white;
+}
+
+::-ms-input-placeholder {
+  color: white;
+}
+
+.c_btn {
+  background: rgba(255, 111, 111, 0.781);
+  text-align: center;
+  padding: 15px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 0.1s ease-in-out;
+}
+
+.c_btn:hover {
+  transform: scale(1.03);
+}
+
+@media screen and (max-width: 900px) {
+  .c_form {
+    flex-direction: column;
+  }
+  .c_msg textarea {
+    height: 80px;
+  }
+  .c_input_fields,
+  .c_msg {
+    width: 100%;
+  }
+}
+
+.c_else {
+  /* background: rgba(216, 142, 112, 0.774); */
+  margin: 0 auto;
+  padding: 25px 100px;
+  max-width: 1050px;
+}
+
+.c_else div {
+  background: rgba(216, 142, 112, 0.774);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.c_else h3 {
+  color: white;
+  font-size: 1.2em;
+}
+
+.c_else p {
+  padding-top: 8px;
+  padding-left: 25px;
+  color: white;
+  font-size: 1.1em;
+}
+
+.c_else p a {
+  text-decoration: none;
+  color: rgb(207, 0, 0);
+  transition: 0.3s ease-in-out;
+}
+
+.c_else p a:hover {
+  color: orangered;
+}
+
+/* CONTACT END */

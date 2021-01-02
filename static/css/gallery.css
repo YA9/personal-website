@@ -1,0 +1,113 @@
+/* BEGIN GALLERY */
+/* This creates the photo slide grid */
+.experience_photos_row {
+  position: absolute;
+  display: flex;
+  margin-top: 45px;
+  /* flex-wrap: wrap; */
+  padding: 0 4px;
+  padding-left: 50px;
+  /* padding-left: 400px;
+  padding-right: 50px; */
+  /* width: 80%; */
+  /* margin: 0px auto; */
+  float: left;
+  max-width: 50%;
+}
+
+.experience_photos_col {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.experience_photos_col img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* the following animates the individual boxes when not hovered */
+.popup {
+  transition: 0.15s ease-out;
+}
+
+/* the following animates the individual boxes once hovered on */
+.popup:hover {
+  position: relative;
+  top: -5px;
+  /* width: 150%; */
+  z-index: 10;
+  transition: 0.2s ease-in;
+  opacity: 50%;
+}
+
+/* PUT THE BELOW IN ITS OWN CSS DOCUMENT */
+/* the below refers to mapping each image to its popup */
+
+.image1 img {
+  position: fixed;
+  padding: 52px 0 0 0px;
+  /* padding-left: 200px; */
+  width: 0%;
+  border-radius: 10px;
+  /* margin: auto; */
+  top: 0px;
+  right: 0;
+  transition: 0.2s ease-in-out;
+  visibility: hidden;
+  /* z-index: 20; */
+}
+
+.image1 h5 {
+  position: relative;
+  top: -96px;
+  left: 6px;
+  visibility: hidden;
+}
+
+.image_1 img:hover + .image1 h5 {
+  visibility: visible;
+  /* width: 25%; */
+  transition: 0.15s ease-in-out;
+  /* z-index: 19; */
+}
+
+.image1 img:hover {
+  width: 50%;
+}
+
+.image_1 img:hover + .image1 img {
+  visibility: visible;
+  width: 45%;
+  transition: 0.15s ease-in-out;
+  z-index: 20;
+}
+
+.image2 img {
+  position: fixed;
+  padding: 52px 0 0 0px;
+  /* padding-left: 200px; */
+  width: 0%;
+  border-radius: 10px;
+  /* margin: auto; */
+  top: 0;
+  right: 0;
+  transition: 0.2s ease-in-out;
+  visibility: hidden;
+  /* z-index: 20; */
+}
+
+/* .image2 img:hover {
+  visibility: visible;
+  width: 50%;
+} */
+
+.image_2 img:hover + .image2 img {
+  visibility: visible;
+  width: 50%;
+  transition: 0.15s ease-in-out;
+  z-index: 20;
+}
+/* END GALLERY */
