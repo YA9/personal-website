@@ -148,6 +148,9 @@ a.navline:hover::before {
 .main_box {
   /* border: 2px solid red; */
   margin: 0 99999px 0 0;
+  padding-bottom: calc(
+    100vh - 643px
+  ); /* prevents the about section from showing in home */
 }
 .main_box div1 img {
   margin: 70px 0px 0px 70px;
@@ -177,7 +180,7 @@ a.navline:hover::before {
   /* right: calc(100% / 3 - 360px); */
   right: calc(40% - 493px);
   /* border: 4px solid black; */
-  border-radius: 50%;
+  border-radius: 10%;
   transition: 0.2s ease-in;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
@@ -209,10 +212,10 @@ a.navline:hover::before {
 
 /* main page walpaper */
 .top_box {
-  background: linear-gradient(
-    /* 225deg, */ rgba(216, 142, 112, 0.2),
+  /* background: linear-gradient(
+    225deg, rgba(216, 142, 112, 0.2),
     rgba(216, 142, 112, 0.2)
-  );
+  ); */
   /* url(../images/processed/code\ ab\ final1.jpg); */
   /* background: url(../images/processed/code\ final.jpg); */
   /* background-position: top; */
@@ -221,7 +224,7 @@ a.navline:hover::before {
   /* background-attachment: fixed; */
   background-position-y: 60px;
   background-size: 100% auto;
-  height: 593px;
+  /* height: 593px; */
 }
 .about_page h1 {
   font-size: 3em;
@@ -240,6 +243,7 @@ a.navline:hover::before {
   padding-bottom: 40px;
   color: black;
   margin: 0 auto;
+  /* margin-top: 20%; */
   width: 60%;
   /* margin-top: 50px; */
   /* padding-right: 50%;
@@ -303,10 +307,10 @@ a.about_anchor {
 /* TIMELINE START */
 .timeline {
   position: relative;
-  float: right;
+  /* float: right; */
   /* margin: 50px 100px 50px 100px; */
-  margin: 50px 0;
-  margin-right: 20px;
+  margin: 50px auto;
+  /* margin-right: 20px; */
   /* padding: 0 100px; */
   /* margin: 50px auto; */
   width: 100%;
@@ -384,36 +388,22 @@ a.about_anchor {
 .timeline ul li h3 a {
   text-decoration: none;
   color: rgb(216, 112, 112);
-  transition: 0.3s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .timeline ul li h3 a:hover {
   color: rgba(255, 68, 0, 0.822);
 }
 
-/* IMAGE HOVER START */
-.t_1 img {
-  visibility: hidden;
-  /* visibility: visible; */
-  position: fixed;
-  padding: 52px 0 0 0px;
-  width: 0;
-  border-radius: 12px;
-  top: 0;
-  right: 0;
+.timeline ul li h3 {
   transition: 0.2s ease-in-out;
 }
 
-#th1 {
-  display: inline-block;
-  /* border: 2px solid red; */
+.timeline ul li h3:hover {
+  color: rgba(255, 68, 0, 0.822);
 }
 
-#th1:hover + #tm1 img {
-  visibility: visible;
-  width: 50%;
-}
-/* IMAGE HOVER END */
+/* experience_hover.css HERE */
 
 .timeline ul li p {
   font-size: 1.1em;
@@ -471,7 +461,7 @@ a.about_anchor {
   /* border: 2px solid red; */
 }
 #contact {
-  padding-top: 60px;
+  padding-top: 59.5px;
 }
 
 .c_wrapper {

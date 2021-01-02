@@ -1,0 +1,176 @@
+/* NOTE: the  odds are coded differently from the evens */
+
+/* TIMELINE ITEM 1 */
+.t_1 img {
+  visibility: hidden;
+  position: fixed;
+  padding: 60px 0 0 0px;
+  opacity: 0;
+  width: calc(50% - 1px);
+  border-radius: 12px;
+  top: 0;
+  right: 0;
+  transition: 0.2s ease-in-out;
+  z-index: 100;
+}
+
+#th1 {
+  display: inline-block;
+  /* border: 2px solid red; */
+}
+
+#th1:hover + #ti1 img {
+  visibility: visible;
+  opacity: 1;
+  /* width: 50%; */
+}
+
+/* TIMELINE ITEM 2 */
+.t_2 img {
+  visibility: hidden;
+  position: fixed;
+  padding: 60px 0 0 0px;
+  opacity: 0;
+  width: calc(50% + 1px);
+  border-radius: 12px;
+  top: 0;
+  left: 0;
+  transition: 0.2s ease-in-out;
+  z-index: 100;
+}
+
+#th2 {
+  display: inline-block;
+  /* border: 2px solid red; */
+}
+
+#th2:hover + #ti2 img {
+  visibility: visible;
+  opacity: 1;
+  /* width: 50%; */
+}
+
+/* TIMELINE ITEM 3 */
+.t_3 img {
+  visibility: hidden;
+  position: fixed;
+  padding: 60px 0 0 0px;
+  opacity: 0;
+  width: calc(50% - 1px);
+  border-radius: 12px;
+  top: 0;
+  right: 0;
+  transition: 0.2s ease-in-out;
+  z-index: 100;
+}
+
+#th3 {
+  display: inline-block;
+  /* border: 2px solid red; */
+}
+
+#th3:hover + #ti3 img {
+  visibility: visible;
+  opacity: 1;
+  /* width: 50%; */
+}
+
+/* TIMELINE ITEM 4 */
+.t_4 img {
+  visibility: hidden;
+  position: fixed;
+  padding: 60px 0 0 0px;
+  opacity: 0;
+  width: calc(50% + 1px);
+  border-radius: 12px;
+  top: 0;
+  left: 0;
+  transition: 0.2s ease-in-out;
+  z-index: 100;
+}
+
+#th4 {
+  display: inline-block;
+  /* border: 2px solid red; */
+}
+
+#th4:hover + #ti4 img {
+  visibility: visible;
+  opacity: 1;
+  /* width: 50%; */
+}
+
+/* TIMELINE ITEM 5 */
+.t_5 img {
+  visibility: hidden;
+  position: fixed;
+  padding: 60px 0 0 0px;
+  opacity: 0;
+  width: calc(50% - 1px);
+  border-radius: 12px;
+  top: 0;
+  right: 0;
+  transition: 0.2s ease-in-out;
+  z-index: 100;
+}
+
+#th5 {
+  display: inline-block;
+  /* border: 2px solid red; */
+}
+
+#th5:hover + #ti5 img {
+  visibility: visible;
+  opacity: 1;
+  /* width: 50%; */
+}
+
+/* TIMELINE ITEM 6 */
+.t_6 img {
+  visibility: hidden;
+  position: fixed;
+  padding: 60px 0 0 0px;
+  opacity: 0;
+  width: calc(50% + 1px);
+  border-radius: 12px;
+  top: 0;
+  left: 0;
+  transition: 0.2s ease-in-out;
+  z-index: 100;
+}
+
+#th6 {
+  display: inline-block;
+  /* border: 2px solid red; */
+}
+
+#th6:hover + #ti6 img {
+  visibility: visible;
+  opacity: 1;
+  /* width: 50%; */
+}
+
+/* TIMELINE ITEM 7 */
+.t_7 img {
+  visibility: hidden;
+  position: fixed;
+  padding: 60px 0 0 0px;
+  opacity: 0;
+  width: calc(50% - 1px);
+  border-radius: 12px;
+  top: 0;
+  right: 0;
+  transition: 0.2s ease-in-out;
+  z-index: 100;
+}
+
+#th7 {
+  display: inline-block;
+  /* border: 2px solid red; */
+}
+
+#th7:hover + #ti7 img {
+  visibility: visible;
+  opacity: 1;
+  /* width: 50%; */
+}
