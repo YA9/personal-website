@@ -153,11 +153,14 @@ a.navline:hover::before {
   ); /* prevents the about section from showing in home */
 }
 .main_box div1 img {
-  margin: 70px 0px 0px 70px;
-  margin-top: 72px;
+  margin: 72px 0px 0px 70px;
+  margin-top: calc(
+    (100vh + 60px - (400px + 12px + 100px)) / 2
+  ); /* change this accorging to left cover image height */
   /* border: 2px solid white; */
   border-radius: 8px;
-  height: 400px;
+  /* height: 400px; */
+  width: 770px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   /* width: 42%; */
 }
@@ -167,17 +170,18 @@ a.navline:hover::before {
   /* border: 2px solid white; */
   border-radius: 8px;
   width: 770px;
-  height: 93.5px;
+  /* height: 93.5px; */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   /* width: 42%; */
 }
 
+/* cover photo right */
 .main_box div3 img {
   position: absolute;
   width: 400px;
   height: 400px;
-  top: calc(((593px + 60px - 400px) / 2));
-  /* right: calc(100% / 3 - 360px); */
+  /* top: calc(((593px + 60px - 400px) / 2)); */
+  top: calc(((100vh + 60px - 400px) / 2));
   right: calc(40% - 493px);
   /* border: 4px solid black; */
   border-radius: 10%;
@@ -185,14 +189,19 @@ a.navline:hover::before {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
+/* changing left cover image to be responsive */
 @media only screen and (max-width: 920px) {
   .main_box div1 img {
-    margin: 0;
-    margin-top: 72px;
+    /* margin: 0;
+    margin-top: 72px; */
+    margin: 0 auto;
+    margin-top: calc((100vh + 60px - (400px + 12px + 100px)) / 2);
     width: 100%;
   }
   .main_box div2 img {
-    margin: 0;
+    /* margin: 0;
+    margin-top: 10px; */
+    margin: 0 auto;
     margin-top: 10px;
     width: 100%;
   }
@@ -202,6 +211,8 @@ a.navline:hover::before {
     width: 85%;
   }
 }
+
+/* making right cover image disappear responsively */
 @media only screen and (max-width: 1264px) {
   .main_box div3 img {
     transform: scale(0);
@@ -212,10 +223,11 @@ a.navline:hover::before {
 
 /* main page walpaper */
 .top_box {
-  /* background: linear-gradient(
-    225deg, rgba(216, 142, 112, 0.2),
+  background: linear-gradient(
+    225deg,
+    rgba(216, 142, 112, 0.2),
     rgba(216, 142, 112, 0.2)
-  ); */
+  );
   /* url(../images/processed/code\ ab\ final1.jpg); */
   /* background: url(../images/processed/code\ final.jpg); */
   /* background-position: top; */
@@ -225,6 +237,7 @@ a.navline:hover::before {
   background-position-y: 60px;
   background-size: 100% auto;
   /* height: 593px; */
+  height: 100vh;
 }
 .about_page h1 {
   font-size: 3em;
