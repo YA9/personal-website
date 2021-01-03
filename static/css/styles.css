@@ -1,16 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
-/* @font-face {
-  font-family: "custom";
-  src: url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
-  src: url(../fonts/roboto/Roboto-Regular.ttf);
-}
-
-@font-face {
-  font-family: "custom bold";
-  src: url(../fonts/roboto/Roboto-Medium.ttf);
-  src: url(../fonts/roboto/Roboto-Bold.ttf);
-  src: url(../fonts/roboto/Roboto-Black.ttf);
-} */
 
 * {
   margin: 0;
@@ -153,25 +141,29 @@ a.navline:hover::before {
   ); /* prevents the about section from showing in home */
 }
 .main_box div1 img {
-  margin: 72px 0px 0px 70px;
+  margin: 72px 0px 0px 80px;
   margin-top: calc(
-    (100vh + 60px - (400px + 12px + 100px)) / 2
+    (100vh + 60px - (400px + 12px + 60px)) / 2
   ); /* change this accorging to left cover image height */
   /* border: 2px solid white; */
   border-radius: 8px;
   /* height: 400px; */
-  width: 770px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  /* width: 770px; */
+  width: 900px;
+  /* width: 50vw; */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   /* width: 42%; */
 }
 
 .main_box div2 img {
-  margin: 10px 0px 0px 70px;
+  margin: 10px 0px 0px 80px;
   /* border: 2px solid white; */
   border-radius: 8px;
-  width: 770px;
+  /* width: 770px; */
+  width: 900px;
   /* height: 93.5px; */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  /* width: 50vw; */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   /* width: 42%; */
 }
 
@@ -182,20 +174,20 @@ a.navline:hover::before {
   height: 400px;
   /* top: calc(((593px + 60px - 400px) / 2)); */
   top: calc(((100vh + 60px - 400px) / 2));
-  right: calc(40% - 493px);
+  right: calc(40% - 550px);
   /* border: 4px solid black; */
-  border-radius: 10%;
-  transition: 0.2s ease-in;
+  border-radius: 50%;
+  transition: 0.2s ease-in-out;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 /* changing left cover image to be responsive */
-@media only screen and (max-width: 920px) {
+@media only screen and (max-width: 1078px) {
   .main_box div1 img {
     /* margin: 0;
     margin-top: 72px; */
     margin: 0 auto;
-    margin-top: calc((100vh + 60px - (400px + 12px + 100px)) / 2);
+    margin-top: calc((100vh + 60px - (400px + 12px + 60px)) / 2);
     width: 100%;
   }
   .main_box div2 img {
@@ -213,7 +205,7 @@ a.navline:hover::before {
 }
 
 /* making right cover image disappear responsively */
-@media only screen and (max-width: 1264px) {
+@media only screen and (max-width: 1406px) {
   .main_box div3 img {
     transform: scale(0);
     transition: 0.3s ease-out;
@@ -223,11 +215,7 @@ a.navline:hover::before {
 
 /* main page walpaper */
 .top_box {
-  background: linear-gradient(
-    225deg,
-    rgba(216, 142, 112, 0.2),
-    rgba(216, 142, 112, 0.2)
-  );
+  /* background: linear-gradient(225deg, rgb(0, 0, 0), rgb(0, 0, 0)); */
   /* url(../images/processed/code\ ab\ final1.jpg); */
   /* background: url(../images/processed/code\ final.jpg); */
   /* background-position: top; */
@@ -293,7 +281,7 @@ a.about_anchor {
 .experience_page {
   /* height: 500px; */
   text-align: center;
-  padding-top: 60px;
+  padding-top: 59.5px;
   margin: 0 auto;
   width: 60%;
   /* border: 2px solid red; */
@@ -307,6 +295,11 @@ a.about_anchor {
   color: white;
   /* padding-bottom: 25px; */
   /* font-family: "custom bold"; */
+}
+
+.experience_page p {
+  margin-top: 10px;
+  font-size: 1.2em;
 }
 
 #experience_p {
@@ -474,7 +467,7 @@ a.about_anchor {
   /* border: 2px solid red; */
 }
 #contact {
-  padding-top: 59.5px;
+  padding-top: 60px;
 }
 
 .c_wrapper {
