@@ -479,6 +479,8 @@ a.about_anchor {
   max-width: 850px;
   /* background: rgba(112, 166, 216, 0.801); */
   background: rgba(216, 142, 112, 0.774);
+  /* background: white; */
+  /* background: rgba(112, 128, 144, 0.171); */
   /* border: 2px solid red; */
   padding: 30px;
   border-radius: 12px;
@@ -504,8 +506,10 @@ a.about_anchor {
   border: 0;
   outline: 0;
   border-bottom: 2px solid white;
+  /* border-bottom: 2px solid black; */
   padding: 10px;
   color: white;
+  /* color: black; */
   font-size: 1.1em;
   width: 100%;
 }
@@ -515,19 +519,23 @@ a.about_anchor {
 }
 
 ::-webkit-input-placeholder {
+  /* color: black; */
   color: white;
 }
 
 ::-moz-input-placeholder {
+  /* color: black; */
   color: white;
 }
 
 ::-ms-input-placeholder {
+  /* color: black; */
   color: white;
 }
 
 .c_btn {
   background: rgba(255, 111, 111, 0.781);
+  /* background: white; */
   text-align: center;
   padding: 15px;
   border-radius: 5px;
@@ -591,3 +599,13 @@ a.about_anchor {
 }
 
 /* CONTACT END */
+
+#copyright {
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+#copyright p {
+  color: slategray;
+}
