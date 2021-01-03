@@ -479,7 +479,7 @@ a.about_anchor {
   max-width: 850px;
   /* background: rgba(112, 166, 216, 0.801); */
   background: rgba(216, 142, 112, 0.774);
-  /* background: white; */
+  /* background: rgba(216, 142, 112, 0.534); */
   /* background: rgba(112, 128, 144, 0.171); */
   /* border: 2px solid red; */
   padding: 30px;
@@ -503,13 +503,15 @@ a.about_anchor {
 .c_msg textarea {
   margin: 10px 0;
   background: transparent;
+  /* background: rgba(112, 128, 144, 0.1); */
   border: 0;
   outline: 0;
   border-bottom: 2px solid white;
+  border-radius: 5px;
   /* border-bottom: 2px solid black; */
   padding: 10px;
-  color: white;
-  /* color: black; */
+  /* color: white; */
+  color: rgb(255, 255, 255);
   font-size: 1.1em;
   width: 100%;
 }
@@ -519,7 +521,7 @@ a.about_anchor {
 }
 
 ::-webkit-input-placeholder {
-  /* color: black; */
+  /* color: rgba(0, 0, 0, 0.5); */
   color: white;
 }
 
@@ -534,7 +536,7 @@ a.about_anchor {
 }
 
 .c_btn {
-  background: rgba(255, 111, 111, 0.781);
+  background: rgb(216, 112, 112);
   /* background: white; */
   text-align: center;
   padding: 15px;
