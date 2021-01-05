@@ -82,8 +82,8 @@
   position: fixed;
   padding: 60px 0 0 0px;
   opacity: 0;
-  /* width: calc(50% + 1px); */
-  height: 100%;
+  max-width: calc(50% + 1px);
+  max-height: 100vh;
   border-radius: 12px;
   top: 0;
   left: 0;
@@ -108,8 +108,8 @@
   position: fixed;
   padding: 60px 0 0 0px;
   opacity: 0;
-  /* width: calc(50% - 1px); */
-  height: 100%;
+  max-width: calc(50% - 1px);
+  max-height: 100vh;
   border-radius: 12px;
   top: 0;
   right: 0;

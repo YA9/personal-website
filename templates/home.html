@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../static/css/styles.css" />
     <link rel="stylesheet" href="../static/css/gallery.css" />
     <link rel="stylesheet" href="../static/css/experience_hover.css" />
+    <script src="../static/js/contact.js"></script>
   </head>
   <body>
   <div class="top_box">
@@ -176,7 +177,7 @@
                 Developed a responsive website to showcase skills in front end web development.
                 <br>
                 <br>
-                Skills developed: HTML, CSS, Python, web hosting, web design.
+                Skills developed: HTML, CSS, JS, Python, web hosting, web design.
               </p>
             </div>
             <div class="t_time">
@@ -244,26 +245,30 @@
       </div> -->
       <div class="c_wrapper">
         <div class="c_form">
+          <form action="https://formspree.io/f/xdopyoyg" id="main_form" method="POST">
           <div class="c_input_fields">
-            <input type="text" class="c_input" placeholder="Name">
-            <input type="text" class="c_input" placeholder="Email">
-            <input type="text" class="c_input" placeholder="Subject">
-            <input type="text" class="c_input" placeholder="Additional Contact">
+            <input type="text" class="c_input" placeholder="Name" name="name">
+            <input type="text" class="c_input" placeholder="Email" name="email">
+            <input type="text" class="c_input" placeholder="Subject" name="subject">
+            <input type="text" class="c_input" placeholder="Additional Contact" name="additional contact">
           </div>
           <div class="c_msg">
-            <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
-            <div class="c_btn">Submit
-            </div>
+            <textarea name="message" id="" cols="30" rows="10" placeholder="Message"></textarea>
+            <button type="submit" class="c_btn">Submit</button>
+            </form>
+            <!-- <input type="submit" class="c_btn" form="main_form"> -->
+            <!-- <button type="submit" class="c_btn" form="main_form">Submit</button> -->
           </div>
-        </div>
+        </div id="c_status">
       </div>
 
       <div class="c_else">
         <div>
-          <h3>Or, you can reach me through:</h3>
+          <h3>Additional Resources:</h3>
           <p>Email: <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&to=yalbakri@olin.edu" target="_blank">yalbakri@olin.edu</a></p>
           <p>LinkedIn: <a href="https://www.linkedin.com/in/yalb/" target="_blank">linkedin.com/in/yalb/</a></p>
           <p>GitHub: <a href="https://github.com/ya9" target="_blank">github.com/ya9</a></p>
+          <p>Resume: <a href="https://drive.google.com/file/d/1G_QiSvHEJVbYB-slNYWJdHPPsfAPe2ki/view?usp=sharing" target="_blank">drive.google.com</a></p>
         </div>
       </div>
     </div>

@@ -537,21 +537,25 @@ a.about_anchor {
 
 .c_btn {
   background: rgb(216, 112, 112);
+  border: 0;
+  outline: 0;
   /* background: white; */
+  width: 100%;
   text-align: center;
   padding: 15px;
   border-radius: 5px;
   color: white;
+  font-size: 1.1em;
   cursor: pointer;
   text-transform: uppercase;
   transition: 0.1s ease-in-out;
 }
 
 .c_btn:hover {
-  transform: scale(1.03);
+  transform: scale(1.01);
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 9999px) {
   .c_form {
     flex-direction: column;
   }
