@@ -56,7 +56,7 @@
   position: fixed;
   padding: 60px 0 0 0px;
   opacity: 0;
-  /* width: calc(50% - 1px); */
+  max-width: calc(50% - 1px);
   height: 100%;
   border-radius: 12px;
   top: 0;
