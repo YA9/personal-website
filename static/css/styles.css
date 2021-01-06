@@ -300,6 +300,10 @@ a.about_anchor {
 .experience_page p {
   margin-top: 10px;
   font-size: 1.2em;
+  background: rgba(255, 255, 0, 0.7);
+  border-radius: 8px;
+  padding: 5px;
+  display: inline-block;
 }
 
 #experience_p {
