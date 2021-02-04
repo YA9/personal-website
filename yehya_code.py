@@ -1,4 +1,5 @@
 
+
 class Student:
     def __init__(self, name, etype, institution, skills):
         self.name = name
@@ -11,7 +12,7 @@ yalbakri = Student(
     "Yehya Albakri",
     "Full Stack Software Developer",
     "Olin College of Engineering",
-    "Python, R, HTML, CSS, C, Java, MATLAB, OCaml")
+    "Python, R, SQL, HTML, CSS, C, Java, MATLAB, OCaml")
 
 print('Name: ', yalbakri.name)
 print('Engineer type: ', yalbakri.etype)
