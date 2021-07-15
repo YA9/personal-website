@@ -424,7 +424,7 @@ a.about_anchor {
   position: absolute;
   top: 12px;
   /* -225 px from the right */
-  right: -200px;
+  right: -195px;
   padding: 8px 16px;
   background: rgb(216, 112, 112);
   color: white;
