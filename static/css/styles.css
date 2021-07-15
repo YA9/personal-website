@@ -423,7 +423,8 @@ a.about_anchor {
 .timeline ul li:nth-child(odd) .t_time {
   position: absolute;
   top: 12px;
-  right: -225px;
+  /* -225 px from the right */
+  right: -200px;
   padding: 8px 16px;
   background: rgb(216, 112, 112);
   color: white;
