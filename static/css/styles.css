@@ -372,7 +372,6 @@ a.about_anchor {
   width: 10px;
   height: 10px;
   background: rgb(216, 112, 112);
-  background: rgba(131, 112, 216, 0);
   border-radius: 50%;
   /* box-shadow: 0 0 0 3px rgba(216, 112, 147, 0.2); */
 }
@@ -384,7 +383,7 @@ a.about_anchor {
   left: -4px;
   width: 10px;
   height: 10px;
-  background: rgba(216, 112, 112, 0);
+  background: rgb(216, 112, 112);
   border-radius: 50%;
   /* box-shadow: 0 0 0 3px rgba(216, 112, 147, 0.2); */
 }
