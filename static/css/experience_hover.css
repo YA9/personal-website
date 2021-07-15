@@ -177,3 +177,28 @@
   opacity: 1;
   /* width: 50%; */
 }
+
+/* TIMELINE ITEM 8 */
+.t_8 img {
+  visibility: hidden;
+  position: fixed;
+  padding: 60px 0 0 0px;
+  opacity: 0;
+  width: calc(50% + 1px);
+  border-radius: 12px;
+  top: 0;
+  left: 0;
+  transition: 0.2s ease-in-out;
+  z-index: 100;
+}
+
+#th8 {
+  display: inline-block;
+  /* border: 2px solid red; */
+}
+
+#th8:hover + #ti8 img {
+  visibility: visible;
+  opacity: 1;
+  /* width: 50%; */
+}
