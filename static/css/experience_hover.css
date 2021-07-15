@@ -6,7 +6,7 @@
   position: fixed;
   padding: 60px 0 0 0px;
   opacity: 0;
-  width: calc(50% + 1px);
+  width: calc(50% - 1px);
   border-radius: 12px;
   top: 0;
   left: 0;
