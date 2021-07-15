@@ -372,6 +372,7 @@ a.about_anchor {
   width: 10px;
   height: 10px;
   background: rgb(216, 112, 112);
+  background: rgba(131, 112, 216, 0);
   border-radius: 50%;
   /* box-shadow: 0 0 0 3px rgba(216, 112, 147, 0.2); */
 }
@@ -383,7 +384,7 @@ a.about_anchor {
   left: -4px;
   width: 10px;
   height: 10px;
-  background: rgb(216, 112, 112);
+  background: rgba(216, 112, 112, 0);
   border-radius: 50%;
   /* box-shadow: 0 0 0 3px rgba(216, 112, 147, 0.2); */
 }
@@ -423,8 +424,8 @@ a.about_anchor {
 .timeline ul li:nth-child(odd) .t_time {
   position: absolute;
   top: 12px;
-  /* -225 px from the right */
-  right: -195px;
+  /* Move 42 pixels from either side (this is the distance to the title) */
+  right: -239px; 
   padding: 8px 16px;
   background: rgb(216, 112, 112);
   color: white;
@@ -434,9 +435,10 @@ a.about_anchor {
 }
 
 .timeline ul li:nth-child(even) .t_time {
+  /* Move 41 pixels from either side (this is the distance to the title) */
   position: absolute;
   top: 12px;
-  left: -215px;
+  left: -221px;
   padding: 8px 16px;
   background: rgb(216, 112, 112);
   color: white;
