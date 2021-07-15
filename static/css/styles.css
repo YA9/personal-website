@@ -423,7 +423,7 @@ a.about_anchor {
 .timeline ul li:nth-child(odd) .t_time {
   position: absolute;
   top: 12px;
-  right: -185px;
+  right: -225px;
   padding: 8px 16px;
   background: rgb(216, 112, 112);
   color: white;
@@ -435,7 +435,7 @@ a.about_anchor {
 .timeline ul li:nth-child(even) .t_time {
   position: absolute;
   top: 12px;
-  left: -155px;
+  left: -215px;
   padding: 8px 16px;
   background: rgb(216, 112, 112);
   color: white;
