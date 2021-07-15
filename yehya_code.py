@@ -12,9 +12,10 @@ yalbakri = Student(
     "Yehya Albakri",
     "Full Stack Software Developer",
     "Olin College of Engineering",
-    "Python, R, SQL, HTML, CSS, C, Java, MATLAB, OCaml")
+    "Python, R, C, SQL, Hbase, Apache Spark, HTML, CSS, MATLAB, OCaml")
 
 print('Name: ', yalbakri.name)
 print('Engineer type: ', yalbakri.etype)
 print('Current institution: ', yalbakri.institution)
 print('Skills: ', yalbakri.skills)
+
